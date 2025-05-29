@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ohc/static/css/main.98c95d4a.css",
+    "main.js": "/ohc/static/js/main.eb20d414.js",
+    "static/media/image2.JPG": "/ohc/static/media/image2.7e9fb6b2868382e87c50.JPG",
+    "static/media/image3.JPG": "/ohc/static/media/image3.f04d4d800b8137497fb5.JPG",
+    "static/media/image1.JPG": "/ohc/static/media/image1.7804a6cb73b9b71af348.JPG",
+    "index.html": "/ohc/index.html",
+    "main.98c95d4a.css.map": "/ohc/static/css/main.98c95d4a.css.map",
+    "main.eb20d414.js.map": "/ohc/static/js/main.eb20d414.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98c95d4a.css",
+    "static/js/main.eb20d414.js"
+  ]
+}
