@@ -2,6 +2,8 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
+import { Link } from 'react-router-dom'
+
 import './navbar.css'
 
 const Navbar = (props) => {
@@ -15,9 +17,10 @@ const Navbar = (props) => {
         />
         <div data-thq="thq-navbar-nav" className="navbar-desktop-menu">
           <nav className="navbar-links1">
-            <span className="thq-link thq-body-small">{props.link1}</span>
-            <span className="thq-link thq-body-small">{props.link2}</span>
-            <span className="thq-link thq-body-small">{props.link3}</span>
+            {/* Changed the links to use React Router's Link component */}
+            <Link to='/home' className="thq-link thq-body-small">{props.link1}</Link>
+            <Link to='/about' className='thq-link thq-body-small'>{props.link2}</Link>
+            <Link to='/events' className='thq-link thq-body-small'>{props.link3}</Link>
             <span className="thq-link thq-body-small">{props.link4}</span>
             <span className="thq-link thq-body-small">{props.link5}</span>
           </nav>
@@ -50,9 +53,10 @@ const Navbar = (props) => {
               </div>
             </div>
             <nav className="navbar-links2">
-              <span className="thq-link thq-body-small">{props.link1}</span>
-              <span className="thq-link thq-body-small">{props.link2}</span>
-              <span className="thq-link thq-body-small">{props.link3}</span>
+              {/* Changed the links to use React Router's Link component */}
+              <Link to='/home' className="thq-link thq-body-small">{props.link1}</Link>
+              <Link to='/about' className='thq-link thq-body-small'>{props.link2}</Link>
+              <Link to='/events' className='thq-link thq-body-small'>{props.link3}</Link>
               <span className="thq-link thq-body-small">{props.link4}</span>
               <span className="thq-link thq-body-small">{props.link5}</span>
             </nav>
@@ -70,7 +74,8 @@ const Navbar = (props) => {
 Navbar.defaultProps = {
   link1: 'Home',
   action1: '/home',
-  link3: 'Events',
+  link3: 'Event',
+  action3: '/event',
   logoAlt: 'Open Heart Collective Logo',
   logoSrc:
     'https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&force_format=original',
@@ -83,6 +88,8 @@ Navbar.defaultProps = {
 Navbar.propTypes = {
   link1: PropTypes.string,
   action1: PropTypes.string,
+  link2: PropTypes.string,
+  action2: PropTypes.string,
   link3: PropTypes.string,
   logoAlt: PropTypes.string,
   logoSrc: PropTypes.string,

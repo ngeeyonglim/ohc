@@ -14,7 +14,7 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Spotless Hungry Crocodile</title>
+        <title>Open Heart Community</title>
       </Helmet>
       <Navbar></Navbar>
       <Hero></Hero>
