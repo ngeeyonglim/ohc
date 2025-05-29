@@ -8,7 +8,7 @@ const Footer = (props) => {
   return (
     <footer className="footer-footer1 thq-section-padding">
       <div className="footer-max-width thq-section-max-width">
-        <div className="footer-content">
+        {/* <div className="footer-content">
           <div className="footer-newsletter">
             <span className="thq-body-small">
               Subscribe to our newsletter for the latest updates on new features
@@ -177,16 +177,16 @@ const Footer = (props) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="footer-credits">
           <div className="thq-divider-horizontal"></div>
           <div className="footer-row">
             <span className="thq-body-small">{props.content3}</span>
-            <div className="footer-footer-links3">
+            {/* <div className="footer-footer-links3">
               <span className="thq-body-small">{props.privacyLink}</span>
               <span className="thq-body-small">{props.termsLink}</span>
               <span className="thq-body-small">{props.cookiesLink}</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -201,7 +201,7 @@ Footer.defaultProps = {
   cookiesLink: 'https://www.example.com/cookies',
   link9: 'mailto:info@example.com',
   link4: 'https://www.facebook.com/example',
-  content3: '123 Main Street, City, Country',
+  content3: 'Singapore, 2023 © Open Heart Collective',
   link5: 'https://www.twitter.com/example',
   privacyLink: 'https://www.example.com/privacy',
   link8: 'https://www.youtube.com/example',

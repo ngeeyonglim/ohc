@@ -39,9 +39,9 @@ const Eventslist = () => {
   return (
     <div className="events-container thq-section-padding thq-section-max-width">
       <h1 className="events-title thq-heading-1">Upcoming Events</h1>
-      <div className="thq-grid-auto-300">
+      <div className="events-list">
         {events.map((event) => (
-          <div key={event.id} className="thq-card thq-box-shadow">
+          <div key={event.id} className="event-card thq-card thq-box-shadow">
             <div className="event-content">
               <h2 className="event-title thq-heading-3">{event.title}</h2>
               <p className="event-date thq-body-small">{event.date}</p>

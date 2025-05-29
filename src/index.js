@@ -18,6 +18,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
+        <Route component={Home} exact path="/" />
         <Route component={NotFound1} exact path="/not-found" />
         <Route component={Home} exact path="/home" />
         <Route component={About} exact path="/about" />

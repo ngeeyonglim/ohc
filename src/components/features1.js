@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 import './features1.css'
+import image1 from './images/image1.JPG'
+import image2 from './images/image2.JPG'
+import image3 from './images/image3.JPG'
 
 const Features1 = (props) => {
   const [activeTab, setActiveTab] = useState(0)
@@ -40,7 +43,7 @@ const Features1 = (props) => {
             <div className="features1-divider-container1">
               {activeTab === 0 && <div className="features1-container3"></div>}
             </div>
-            <div className="features1-content1">
+            <div className="features1-content2">
               <h2 className="thq-heading-2">{props.feature1Title}</h2>
               <span className="thq-body-small">
                 {props.feature1Description}
@@ -83,16 +86,13 @@ const Features1 = (props) => {
 
 Features1.defaultProps = {
   feature3Description: 'Join us for regular community events and workshops.',
-  feature2ImgSrc:
-    'https://images.unsplash.com/photo-1565078872318-f755c31f34c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0ODM2Njg3NHw&ixlib=rb-4.1.0&q=80&w=1080',
+  feature2ImgSrc: image2,
   feature2Description:
     'Connect with like-minded individuals who share your interests and values.',
   feature3ImgAlt: 'Community Events Image',
   feature2Title: 'Shared Values',
-  feature3ImgSrc:
-    'https://images.unsplash.com/photo-1560215978-9054e9c7b983?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0ODM2Njg3NHw&ixlib=rb-4.1.0&q=80&w=1080',
-  feature1ImgSrc:
-    'https://images.unsplash.com/photo-1599595344070-c456bea6ee98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc0ODM2Njg3NHw&ixlib=rb-4.1.0&q=80&w=1080',
+  feature3ImgSrc:image3,
+  feature1ImgSrc: image1,
   feature3Title: 'Community Events',
   feature1Title: 'Community Connection',
   feature1Description:

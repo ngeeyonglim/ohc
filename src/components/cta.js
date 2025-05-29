@@ -16,9 +16,14 @@ const CTA = (props) => {
                 <p className="thq-body-large">{props.content1}</p>
               </div>
               <div className="cta-actions">
-                <button type="button" className="thq-button-filled cta-button">
+                <a 
+                  href={props.action1Link}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="thq-button-filled cta-button1"
+                >
                   {props.action1}
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -32,13 +37,15 @@ CTA.defaultProps = {
   action1: 'Sign Up Now',
   content1:
     'Connect with like-minded individuals who share your values and beliefs.',
-  heading1: 'Join Our Community',
+  heading1: 'Join An Event',
+  action1Link: 'https://docs.google.com/spreadsheets/',
 }
 
 CTA.propTypes = {
   action1: PropTypes.string,
   content1: PropTypes.string,
   heading1: PropTypes.string,
+  action1Link: PropTypes.string,
 }
 
 export default CTA

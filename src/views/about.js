@@ -8,6 +8,7 @@ import Features1 from '../components/features1'
 import CTA from '../components/cta'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
+import AboutUs from '../components/aboutus'
 import './home.css'
 
 const About = (props) => {
@@ -17,7 +18,7 @@ const About = (props) => {
         <title>About Us</title>
       </Helmet>
       <Navbar></Navbar>
-      {/* Add event calendar component*/}
+      <AboutUs></AboutUs>
       <CTA></CTA>
       <Contact></Contact>
       <Footer></Footer>
