@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 import './features1.css'
-import image1 from './images/image1.JPG'
-import image2 from './images/image2.JPG'
-import image3 from './images/image3.JPG'
+import image1 from './images/image1.jpg'
+import image2 from './images/image2.jpg'
+import image3 from './images/image3.avif'
 
 const Features1 = (props) => {
   const [activeTab, setActiveTab] = useState(0)
